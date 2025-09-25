@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'BondieRounded';
+    src: url('fonts/BondieRoundedDemoRegular-G33qA.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Faddish';
+    src: url('./fonts/Faddish-MAl6Y.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tye-Paloon';
+    src: url('./fonts/TyePaloon-m12m.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border: 8px solid #dfc9aa;
+    height: 100vh; /* Change this from min-height */
+    margin: 0;
+}
+
+.title-banner {
+    background-color: #f1dad3;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.title-main {
+    font-family: 'Faddish', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Styling for the publications section */
+.publications-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Container for the line and the publications title */
+.publications-title-container {
+    text-align: left; /* Ensures the whole block is left-aligned */
+    margin-bottom: 20px;
+}
+
+.publications-title {
+    display: inline-flex; /* Use inline-flex to make the container shrink to its content */
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the line to the left under the text */
+    gap: 5px; /* Adds space between the title and the line */
+}
+
+/* New element to wrap the text and apply font styles */
+.publications-title span {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.publications-line {
+    border: none;
+    height: 2px;
+    background-color: #dfc9aa;
+    width: 100%;
+}
+
+.publications-list {
+    list-style-type: disc;
+    font-family: 'Tye-Paloon', Arial, sans-serif;
+    color: #333;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+.publications-list li {
+    margin-bottom: 10px;
+}
+
+.presentations-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.presentations-title-container {
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+.presentations-title {
+    display: inline-flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 5px; 
+}
+
+.presentations-title span {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.presentations-line {
+    border: none;
+    height: 2px;
+    background-color: #dfc9aa;
+    width: 100%;
+}
+
+.presentations-list {
+    list-style-type: disc;
+    font-family: 'Tye-Paloon', Arial, sans-serif;
+    color: #333;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+.presentations-list li {
+    margin-bottom: 10px;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Changed from 'right' to 'left' */
+    z-index: 1000;
+    text-decoration: none; /* Removes the default underline from the link */
+    color: #333; /* Sets the text color */
+    display: flex; /* Enables Flexbox for easy alignment */
+    flex-direction: column; /* Stacks the child elements vertically */
+    align-items: center; /* Centers the image and text horizontally */
+    font-family: 'BondieRounded', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.back-button img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 5px; /* Adds a small gap between the image and the text */
+}
+
+.back-button:hover {
+    color: #dfc9aa; /* Changes the text color on hover */
+}

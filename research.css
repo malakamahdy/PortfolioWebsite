@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'BondieRounded';
+    src: url('fonts/BondieRoundedDemoRegular-G33qA.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Faddish';
+    src: url('./fonts/Faddish-MAl6Y.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tye-Paloon';
+    src: url('./fonts/TyePaloon-m12m.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.year-font {
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border: 8px solid #dfc9aa;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.title-banner {
+    background-color: #f1dad3;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.title-main {
+    font-family: 'Faddish', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+
+.research-intro {
+    font-family: 'Tye-Paloon', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.research-desc {
+    font-family: 'Tye-Paloon', sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.research-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Tye-Paloon', sans-serif;
+}
+
+.research-role {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    /* Add these three lines below */
+    display: inline-block;
+    border-bottom: 2px solid #dfc9aa;
+    padding-bottom: 5px; /* Adds a small gap between the text and the line */
+}
+
+.research-list {
+    list-style-type: disc;
+    font-family: 'Tye-Paloon', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    font-size: 0.88rem;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.research-list li {
+    margin-bottom: 10px;
+}
+
+.syllabus-links {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.syllabus-links a {
+    display: block;
+    font-family: 'BondieRounded', Arial, sans-serif;
+    color: #dfc9aa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.syllabus-links a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'BondieRounded', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.back-button img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.back-button:hover {
+    color: #dfc9aa;
+}
+
+.research-bubble {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.bubble-text {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    color: #fff;
+    background-color: #dfc9aa;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: 2px solid #dfc9aa;
+    transition: background-color 0.3s ease;
+}
+
+.research-line {
+    border: none;
+    height: 2px;
+    background-color: #dfc9aa;
+    width: 100%;
+    display: inline-block; /* makes it shrink-wrap to content */
+}
