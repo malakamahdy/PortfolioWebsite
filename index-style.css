@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'BondieRounded';
+    src: url('fonts/BondieRoundedDemoRegular-G33qA.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Faddish';
+    src: url('./fonts/Faddish-MAl6Y.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tye-Paloon';
+    src: url('./fonts/TyePaloon-m12m.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    border: 8px solid #dfc9aa;
+    min-height: 100vh;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    flex: 1;
+    background-color: #f1dad3;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo-container {
+    max-width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #fff;
+}
+
+.photo-placeholder {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+.name {
+    font-family: 'Faddish', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner .title,
+.banner .subtitle {
+    font-family: 'BondieRounded', Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.nav-button {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    color: #fff;
+    background-color: #dfc9aa;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: 2px solid #dfc9aa;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: transparent;
+    color: #dfc9aa;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.text-block {
+    flex: 1;
+    font-family: 'Tye-Paloon', Arial, sans-serif;
+    font-size: 0.88rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.text-block p {
+    margin-bottom: 1em;
+}
+
+.contact-info {
+    flex: 1;
+    font-family: 'Tye-Paloon', Arial, sans-serif;
+    font-size: 0.88rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #b39b7a;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    width: 35px;
+    height: auto;
+    margin-right: 17px;
+}
+
+.contact-title {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+}
+
+/* Styling for the new "NEWS" section */
+.news-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Container for the line and the NEWS title */
+.news-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns the line and text to the right within its container */
+}
+
+.news-line {
+    border: none;
+    height: 2px;
+    background-color: #dfc9aa;
+    width: 100%;
+}
+
+.news-title {
+    font-family: 'BondieRounded', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.news-list {
+    list-style-type: disc;
+    font-family: 'Tye-Paloon', Arial, sans-serif;
+    color: #333;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding-left: 20px;
+    flex-grow: 1; /* Allows the list to take up the remaining space */
+}
+
+.news-list li {
+    margin-bottom: 10px;
+}
+
+/* Add a media query for the news section to ensure it's responsive */
+@media (max-width: 768px) {
+    .news-section {
+        flex-direction: column; /* Stacks on mobile */
+    }
+    .news-header-container {
+        align-items: flex-start; /* Aligns the line and title to the left on mobile */
+    }
+}
